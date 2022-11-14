@@ -75,9 +75,9 @@ public:
     inline glm::ivec2 getSize() { return Size; }
     inline glm::ivec2 getCursorPosition(){ return MousePosition; }
 
-    inline ALLEGRO_DISPLAY* GetDisplay() { return Display; }
-    inline ALLEGRO_FONT* getFont() { return Fonte; }
-    inline ALLEGRO_TIMER* getTimer() { return timer; }
+    static inline ALLEGRO_DISPLAY* GetDisplay() { return Display; }
+    static inline ALLEGRO_FONT* getFont() { return Fonte; }
+    static inline ALLEGRO_TIMER* getTimer() { return timer; }
 
     inline void Close() { game_loop_state = false; }
     inline void FlipDisplay() { al_flip_display(); }

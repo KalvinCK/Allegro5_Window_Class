@@ -14,7 +14,7 @@ static double frameCount = 0.0;
 void Timer::GetCountFrames()
 {
     double Time = al_get_time();
-    ElapsedTime = al_get_timer_speed(Window::timer);
+    ElapsedTime = al_get_timer_speed(Window::getTimer());
 
     frameCount++;
     if (Time - previousTime >= 1.0)
